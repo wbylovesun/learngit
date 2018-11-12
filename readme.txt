@@ -1,4 +1,5 @@
 Git is a free software under the GPL.
+Stashed line 2.
 Git is greater than SVN.
 What you see is not really what you saw.
 What you listening is not really what you listened.
