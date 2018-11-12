@@ -1,2 +1,3 @@
 Git is free software under the GPL.
 Git is greater than SVN.
+What you see is not really what you saw.
