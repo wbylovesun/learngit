@@ -17,7 +17,7 @@ jobs:
       # - image: circleci/mysql:5.7-ram
       #
       # - image: redis:2.8.19
-
+    work_directory: /var/www/learngit
     steps:
       - checkout
 
@@ -33,7 +33,8 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
-      - run: composer install -n --prefer-dist
+      
+      - run: composer install -d src/ -n --prefer-dist
 
       - save_cache:
           key: v1-dependencies-{{ checksum "src/composer.json" }}
