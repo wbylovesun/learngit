@@ -17,7 +17,7 @@ jobs:
       # - image: circleci/mysql:5.7-ram
       #
       # - image: redis:2.8.19
-    work_directory: /var/www/learngit
+
     steps:
       - checkout
 
@@ -46,6 +46,6 @@ jobs:
       # - run: php artisan migrate --env=testing --database=sqlite_testing --force
 
       # run tests with phpunit or codecept
-      - run: ./src/vendor/bin/phpunit
+      - run: ./src/vendor/bin/phpunit tests
       # - run: ./vendor/bin/codecept build
       # - run: ./vendor/bin/codecept run
